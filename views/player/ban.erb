@@ -1,0 +1,11 @@
+<form method="post" action="/player/ban/" id="ban_form">
+	<div id="players">
+    <% @players.each { |player| %>
+      <div name="user_<%= player.id %>" class="div_player">
+        <label><%= player.name %>さんへの票数：</label>
+        <input type="text" name="<%= player.id %>"/>
+      </div>
+    <% } %>
+	</div>
+	<input type="submit" value="決定">
+</form>

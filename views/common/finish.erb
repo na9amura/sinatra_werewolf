@@ -1,0 +1,18 @@
+<div>
+  <%= @result[:Message] %>
+</div>
+
+<div>
+	<% @players.each { |player| %>
+		<div>
+			<%= player.name %>さん：<%= RoleID::ROLE_NAME[player.role] %><%= player.is_dead ? "：死亡" : "" %>
+		</div>
+	<% } %>
+</div>
+
+<div>
+	<a href="/chair/note/players/">あたらしいゲーム</a>
+</div>
+<div>
+	<a href="/chair/note/roles/">おなじメンバーで</a>
+</div>

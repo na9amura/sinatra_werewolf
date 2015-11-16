@@ -1,0 +1,5 @@
+db:
+    development:
+        adapter:  sqlite3
+        host:     localhost
+        database: jinro.db

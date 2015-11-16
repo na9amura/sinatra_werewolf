@@ -1,0 +1,15 @@
+<form method="post" action="/player/guard/" id="guard_form">
+  <div>
+    <label><%= @bodyguard.name %> さんが選択したのは</label>
+  </div>
+  <select name="guarded">
+    <% @players.each { |player| %>
+      <option value="<%= player.id %>"><%= player.name %></option>
+    <% } %>
+  </select>
+	<input type="submit" value="決定">
+</form>
+
+<div>
+	<a href="/player/select/bite/">SKIP</a>
+</div>

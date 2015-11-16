@@ -1,0 +1,14 @@
+<script type="text/javascript" src="../../../js/add_players.js"></script>
+<div name="counter">
+	<input id="count" type="text"/>
+	<input id="set_count" type="button" value="人数反映" onclick="set_count()"/>
+</div>
+<form method="post" action="/chair/add/players/" id="login_form">
+	<div id="message"></div>
+	<div id="players">
+		<div id="player0" class="div_player">
+			<label>参加者1</label><input type="text" name="name0" id="name0" class="txt_player">
+		</div>
+	</div>
+	<input type="submit" value="追加">
+</form>

@@ -1,0 +1,30 @@
+rulez
+
+0.decide roles
+
+
+1.day
+	1.1 discuss
+
+2.vote
+	2.1 vote
+	2.2 count vote result
+	2.3 ban a player the most votes
+	2.4 judge winner
+
+3.night
+	3.1 each role's action
+			bodyguard
+				1 decide a player to save
+			wolf
+				1 decide a player to be killed
+					(if there are mulitple wolves, a player the most votes is killed)
+				2 if the player is the same player who is saved by bodyguard, no player is killed
+			seer
+				1 decide a player you want to konw whether he/she is wolf or not
+				2 system show the player is wolf or not
+			...
+
+4.show result
+	3.1 system tell players the player who is killed by wolf, 
+	otherwise the fact that no player is killed

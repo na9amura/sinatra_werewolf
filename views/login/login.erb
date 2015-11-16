@@ -1,0 +1,14 @@
+
+	
+	<script type="text/javascript" src="../../js/login.js"></script>
+	<form method="post" action="/entry/submit/" id="login_form">
+		<div name='message'></div>
+		<div>
+			<label>なまえ</label><input type="text" name="name" id="name">
+		</div>
+		<div>
+			<label><%= @password_type %></label><input type="password" name="password" id="password">
+		</div>
+		<input name='is_new' style='display:none;' value='<%= @is_new %>'>
+		<input type="button" onclick="btnLogin_onclick()" value="むらにはいる">
+	</form>

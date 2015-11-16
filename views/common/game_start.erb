@@ -1,0 +1,11 @@
+<div>
+	<% @players.each { |player| %>
+		<div>
+			<%= player.name %>さん：<%= RoleID::ROLE_NAME[player.role] %><%= player.is_dead ? "：死亡" : "" %>
+		</div>
+	<% } %>
+</div>
+
+<div>
+	<a href=<%= @action %>>開始</a>
+</div>

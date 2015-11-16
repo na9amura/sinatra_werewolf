@@ -1,0 +1,16 @@
+<form method="post" action="/chair/set/roles/" id="role_form">
+	<div id="message"></div>
+	<div id="players">
+    <% @users.each { |user| %>
+      <div name="user_<%= user.id %>" class="div_player">
+        <label><%= user.name %>さんの役職：</label>
+        <select name="<%= user.id %>">
+          <% @roles.each { |role| %>
+            <option value="<%= role.id %>"><%= role.role_name %></option>
+          <% } %>
+        </select>
+      </div>
+    <% } %>
+	</div>
+	<input type="submit" value="決定">
+</form>

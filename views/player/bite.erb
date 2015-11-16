@@ -1,0 +1,19 @@
+<form method="post" action="/player/bite/" id="bite_form">
+  <div>
+      <% wolves = "" %>
+      <% @werewolves.each { |wolf| %>
+        <% wolves << wolf.name << " " %>
+    <% } %>
+    <label><%= wolves %> さんが選択したのは</label>
+  </div>
+  <select name="bited">
+    <% @players.each { |player| %>
+      <option value="<%= player.id %>"><%= player.name %></option>
+    <% } %>
+  </select>
+	<input type="submit" value="決定">
+</form>
+
+<div>
+	<a href="/player/select/see/">SKIP</a>
+</div>
